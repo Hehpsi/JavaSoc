@@ -1,0 +1,7 @@
+Person1 added
+- URI: https://www.w3.org/TR/activitypub/
+- name: Activity Pub
+
+Person2 added
+- URI: https://www.w3.org/TR/activitypub/#Overview
+- name: Activity Pub1

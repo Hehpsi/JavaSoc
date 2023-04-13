@@ -1,0 +1,54 @@
+Activity.java 
+This is the interface called Activity that can basically declares method called getURI() which returns a String. 
+In this case, any class that can implements the Activity interface must provide an implementation for the getURI() method, which should return a String that represents the URI of the activity.
+
+App.java 
+This is a bascially an interface named App that can have 3 methods: 
+GetInbox(): This method returns an object of type 
+Inbox.getOutbox(): This method returns an object of type 
+Outbox.demo(): This method returns a string. 
+
+ClientActivity.java 
+This is a class named ClientActivity which implements the Activity interface. 
+
+ClientInbox.java 
+This code defines a class called ClientInbox that implements the Inbox interface. 
+The class has the following methods: 
+ClientInbox() - This is the constructor method that initializes the messages field with a new ArrayList 
+Object.getCount() - This method returns the number of messages currently stored in the 
+Inbox.readNext() - This method removes and returns the next message in the 
+Inbox.receive - This method adds a new message to the 
+Inbox.toString() - This method returns a string representation of the inbox. 
+
+ClientOutbox.java 
+This is a class named ClientOutbox that implements the Outbox interface. 
+The deliverNext method returns the first activity object in the messages list and removes it from the list using the remove 
+method from the List interface. 
+The class has three private instance.variables: a Person object named actor, a StreamObject object named streamObject, and a 
+String named summary. 
+The constructor of this class takes four parameters, a String named URI, a String named summary, a Person named actor and a 
+StreamObject named streamObject. 
+The constructor calls the constructor of the parent class ClientActivity and then sets the instance variables using the provided 
+parameters. 
+
+DeleteActivity.java 
+This code defines a DeleteActivity class that extends the ClientActivity class. 
+The ClientActivity class is not provided in this code, but it is assumed to exist and to have a constructor that takes a URI as 
+its argument. 
+The DeleteActivity class has four instance variables: actor, createActivity, summary, and the URI inherited from the ClientActivity 
+constructor that takes four arguments: a URI, a summary, a person object representing the actor, and an activity object 
+representing the activity that created the stream object. 
+
+DeliverNextMessage.java 
+This is an interface called DeliverNextMessage which declares a single method deliverNext() that returns an object of type 
+Activity. 
+The class has a constructor that takes four parameters - URI, name, preferredUsername, and summary - and initializes its fields. 
+It declares a single method called readNext() which returns an object of the Activity class. 
+
+SendMessage.java 
+This is an interface named SendMessage that can contains a single method signature send that takes an instance of the Activity 
+class as a parameter and returns a boolean value. 
+
+StreamObject.java 
+The class called StreamObject that can basically represents a generic social media post or object. 
+The main method in this class is the unfollow() method, which takes two Person objects as parameters: actor and object.class. 
